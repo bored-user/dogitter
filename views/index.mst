@@ -1,0 +1,22 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Dogitter</title>
+</head>
+
+<body>
+    {{> partials/header}}
+    <div id="root">
+        <div class="dogeets">
+            {{#dogeets}}
+                <a href="/{{id}}">
+                    <div class="dogeet">
+                        <h3>{{id}}</h3><br>
+                        {{body}}
+                    </div>
+                </a>
+            {{/dogeets}}
+        </div>
+    </div>
+</body>
+</html>

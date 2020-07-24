@@ -1,0 +1,4 @@
+<header>
+    <div><a href="/">DOGITTER</a></div>
+    <div class="new" title="New dogitter"><a href="/new">+</a></div>
+</header>

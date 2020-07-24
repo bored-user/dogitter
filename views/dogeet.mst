@@ -1,0 +1,15 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Dogitter</title>
+</head>
+
+<body>
+    {{> partials/header}}
+    <div id="root">
+        <div class="dogeet_body">
+            {{body}}
+        </div>
+    </div>
+</body>
+</html>

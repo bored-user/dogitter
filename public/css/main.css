@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+}
+
+header {
+    width: 100%;
+    padding: 10px 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.new {
+    color: white;
+    background: lightblue;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    border: 1px solid rgb(30, 143, 180);
+}
+
+#root {
+    padding: 0 20%;
+}
+
+#root > * {
+    margin: auto;
+}
+
+form label {
+    font-weight: bold;
+}
+
+form > * {
+    margin: 10px 0;
+    width: 100%;
+}
+
+form div:not(.counter) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+form textarea {
+    font-size: 16px;
+    padding: 5px;
+    height: 150px;
+    resize: vertical;
+}
+
+.dogeets {
+    display: flex;
+    flex-direction: column;
+}
+
+.dogeet {
+    padding: 20px;
+    max-width: 60vw;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    border: 3px solid white;
+    border-radius: 3px;
+    margin: 5px 0;
+}
+
+.dogeet_body {
+    word-break: break-all;
+}

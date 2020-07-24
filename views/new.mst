@@ -1,0 +1,40 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Dogitter - New</title>
+    <script>
+        window.onload = () => {
+            const counter = document.querySelector('.counter'),
+                txt = document.querySelector('textarea'),
+                btn = document.querySelector('button'),
+                updateCounter = () => {
+                    if (txt.value.length > 256) {
+                        counter.style.color = 'red';
+                        btn.setAttribute('disabled', '')
+                    } else {
+                        counter.style.color = 'black';
+                        btn.removeAttribute('disabled');
+                    }
+
+                    counter.innerText = `${txt.value.length}/256`;
+                };
+
+            txt.oninput = updateCounter;
+            updateCounter();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="root">
+        <form method="POST">
+            <div>
+                <label for="body">Body:</label>
+                <div class="counter">0/256</div>
+            </div>
+            <textarea name="body" id="body"></textarea>
+            <button>Publish</button>
+        </form>
+    </div>
+</body>
+</html>
